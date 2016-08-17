@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "18051994",
+    "database": "test-migration",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "test": {
+    "username": "postgres",
+    "password": "18051994",
+    "database": "momi",
+    "host": "localhost",
+    "dialect": "postgres"
+  },
+  "production": {
+    "username": "postgres",
+    "password": "18051994",
+    "database": "momi",
+    "host": "localhost",
+    "dialect": "postgres"
+  }
+}
