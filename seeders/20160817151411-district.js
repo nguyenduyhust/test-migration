@@ -7,13 +7,17 @@ module.exports = {
         name: 'Hai Ba Trung',
         code: '11',
         is_active: true,
-        city: '01'
+        city: '01',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }, 
       {
         name: 'Phu Ly',
         code: '22',
         is_active: false,
-        city: '02'
+        city: '02',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }
     ], {});
   },

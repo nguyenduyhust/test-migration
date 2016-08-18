@@ -4,10 +4,14 @@ module.exports = {
   up: function (queryInterface, Sequelize) {
     return queryInterface.bulkInsert('tags', [
       {
-        code: '#regular_customer'
+        code: '#regular_customer',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       },
       {
-        code: '#vip_customer'
+        code: '#vip_customer',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }
     ], {});
   },

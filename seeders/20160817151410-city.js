@@ -6,12 +6,16 @@ module.exports = {
       {
         name: 'Hà Nội',
         code: '01',
-        is_active: true
+        is_active: true,
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }, 
       {
         name: 'Hà Nam',
         code: '02',
-        is_active: false
+        is_active: false,
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }
     ], {});
   },

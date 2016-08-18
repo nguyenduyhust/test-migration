@@ -14,7 +14,9 @@ module.exports = {
         point: 200,
         client_category: 'vip',
         district: '11',
-        city: '01'
+        city: '01',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       },
       {
         name: 'Dao Quang Tiep',
@@ -27,7 +29,9 @@ module.exports = {
         point: 200,
         client_category: 'nor',
         district: '22',
-        city: '02'
+        city: '02',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }
     ], {});
   },

@@ -5,11 +5,15 @@ module.exports = {
     return queryInterface.bulkInsert('client_tags', [
       {
         client_id: 1,
-        tag_code: '#vip_customer'
+        tag_code: '#vip_customer',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       },
       {
         client_id: 2,
-        tag_code: '#regular_customer'
+        tag_code: '#regular_customer',
+        createdAt: Sequelize.literal('NOW()'),
+        updatedAt: Sequelize.literal('NOW()')
       }
     ], {});
   },

@@ -16,8 +16,8 @@ module.exports = function(sequelize, DataTypes) {
       classMethods: {
           associate: function (models) {
               Client.belongsTo(models.ClientCategory, {foreignKey: 'client_category'});
-            //   Client.belongsTo(models.District, {foreignKey: 'district_code'});
-            //   Client.belongsTo(models.City, {foreignKey: 'city_code'});
+              Client.belongsTo(models.District, {foreignKey: 'district_code'});
+              Client.belongsTo(models.City, {foreignKey: 'city_code'});
           }
       }
   });
